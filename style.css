@@ -5,12 +5,23 @@
 body{
     width: 100%;
     height:100dvh;
-    background-color: rgb(255, 225, 230);
+    background-image: url('wallpaper.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family:sans-serif;
+    color: white;
 }
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  p {
+    font-family: 'Lora', serif;
+  }
 .navbar{
     padding:1.4rem 7%;
-    background-color: pink;
+    background-color: #000;
     position:fixed;
     top:0;
     left:0;
@@ -30,10 +41,10 @@ body{
 }
 .navbar a{
     font-size:1.4rem;
-    font-family: sans-serif;
     animation: nav 2s ease-in-out forwards;
     width: max-content;
     height: max-content;
+    font-family: 'Playfair Display', serif;
 }
 .content{
     width:100%;
@@ -59,7 +70,7 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
     animation: boxkontent 2.5s ease-in-out;
-
+color: black;
 
 }
 @keyframes boxkontent{
@@ -149,11 +160,21 @@ body{
     border-radius:100%;
 }
 .main-lagu{
-    background-color: rgb(50, 50, 50);
-    width: 3rem;
-    height: 3rem;
-    border-radius:100%;
-}
+    
+    width: 4rem;
+    height: 4rem;
+    
+    }
+    .dvd{
+      animation: spin 3s linear infinite;
+    }
+
+
+  @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
 @keyframes heartme{
     0%{
         transform: scale(1);
